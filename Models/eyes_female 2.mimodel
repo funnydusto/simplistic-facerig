@@ -1,0 +1,225 @@
+{
+	"name": "Eyes",
+	"texture": "Default texture.png",
+	"texture_size": [ 16, 16 ],
+	"parts": [
+		{
+			"name": "Pupils",
+			"depth": -3,
+			"position": [ 0, 0, 0.02 ],
+			"scale": [ 1, 1, 0.1 ],
+			"show_position": 1,
+			"parts": [
+				{
+					"name": "Right Pupil",
+					"position": [ -1.5, 0.5, 0 ],
+					"show_position": 1,
+					"shapes": [
+						{
+							"type": "plane",
+							"from": [ -0.5, -0.5, -1 ],
+							"to": [ 0.5, 0.5, -1 ],
+							"uv": [ 0, 0 ],
+							"3d": true
+						}
+					]
+				},
+				{
+					"name": "Left Pupil",
+					"depth": -3,
+					"position": [ 1.5, 0.5, 0 ],
+					"show_position": 1,
+					"shapes": [
+						{
+							"type": "plane",
+							"from": [ -0.5, -0.5, -1 ],
+							"to": [ 0.5, 0.5, -1 ],
+							"uv": [ 0, 0 ],
+							"3d": true
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Eyes",
+			"depth": -2,
+			"position": [ 0, 0, 0 ],
+			"show_position": 1,
+			"parts": [
+				{
+					"name": "Eye Right",
+					"depth": -2,
+					"position": [ -2, 0, 0 ],
+					"shapes": [
+						{
+							"type": "plane",
+							"color_alpha": 0.01,
+							"from": [ -1, 0, 0 ],
+							"to": [ 1, 1, 0 ],
+							"uv": [ 0, 0 ]
+						}
+					],
+					"parts": [
+						{
+							"name": "Inverted (2)",
+							"depth": -4,
+							"position": [ 0, 0, -0.1 ],
+							"scale": [ 1, 1, 0.1 ],
+							"shapes": [
+								{
+									"type": "block",
+									"from": [ 0, 0, 0 ],
+									"to": [ 2, 1, 1 ],
+									"uv": [ 0, 0 ],
+									"position": [ -1, 0, 0 ],
+									"invert": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Eye Left",
+					"depth": -2,
+					"position": [ 2, 0, 0 ],
+					"shapes": [
+						{
+							"type": "plane",
+							"color_alpha": 0.01,
+							"from": [ -1, 0, 0 ],
+							"to": [ 1, 1, 0 ],
+							"uv": [ 0, 0 ]
+						}
+					],
+					"parts": [
+						{
+							"name": "Inverted",
+							"depth": -4,
+							"position": [ 0, 0, -0.1 ],
+							"scale": [ 1, 1, 0.1 ],
+							"shapes": [
+								{
+									"type": "block",
+									"from": [ 0, 0, 0 ],
+									"to": [ 2, 1, 1 ],
+									"uv": [ 0, 0 ],
+									"position": [ -1, 0, 0 ],
+									"invert": true
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Eyelashes",
+			"position": [ 0, 0, 0 ],
+			"parts": [
+				{
+					"name": "Right Eyelash",
+					"position": [ 3, 1, 0 ],
+					"parts": [
+						{
+							"name": "Lash RA",
+							"position": [ -1, 0, -0.1 ],
+							"shapes": [
+								{
+									"type": "plane",
+									"from": [ -1, 0, 0 ],
+									"to": [ 1, 1, 0 ],
+									"uv": [ 0, 0 ],
+									"scale": [ 1, 1, 0.1 ],
+									"3d": true
+								}
+							]
+						},
+						{
+							"name": "Lash RB",
+							"position": [ 0.5, -1, -0.1 ],
+							"shapes": [
+								{
+									"type": "plane",
+									"from": [ -0.5, 0, 0 ],
+									"to": [ 0.5, 1, 0 ],
+									"uv": [ 0, 0 ],
+									"scale": [ 1, 1, 0.1 ],
+									"3d": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Left Eyelash",
+					"position": [ -3, 1, 0 ],
+					"parts": [
+						{
+							"name": "Lash LA",
+							"position": [ 1, 0, -0.1 ],
+							"shapes": [
+								{
+									"type": "plane",
+									"from": [ -1, 0, 0 ],
+									"to": [ 1, 1, 0 ],
+									"uv": [ 0, 0 ],
+									"scale": [ 1, 1, 0.1 ],
+									"3d": true
+								}
+							]
+						},
+						{
+							"name": "Lash LB",
+							"position": [ -0.5, -1, -0.1 ],
+							"shapes": [
+								{
+									"type": "plane",
+									"from": [ -0.5, 0, 0 ],
+									"to": [ 0.5, 1, 0 ],
+									"uv": [ 0, 0 ],
+									"scale": [ 1, 1, 0.1 ],
+									"3d": true
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Eyebrows",
+			"position": [ 0, 2, -0.05 ],
+			"parts": [
+				{
+					"name": "Left Eyebrow",
+					"position": [ -2, 0, 0 ],
+					"shapes": [
+						{
+							"type": "plane",
+							"from": [ -1, 0, -0.5 ],
+							"to": [ 1, 1, -0.5 ],
+							"uv": [ 0, 0 ],
+							"scale": [ 1, 1, 0.1 ],
+							"3d": true
+						}
+					]
+				},
+				{
+					"name": "Right Eyebrow",
+					"position": [ 2, 0, 0 ],
+					"shapes": [
+						{
+							"type": "plane",
+							"from": [ -1, 0, -0.5 ],
+							"to": [ 1, 1, -0.5 ],
+							"uv": [ 0, 0 ],
+							"scale": [ 1, 1, 0.1 ],
+							"3d": true
+						}
+					]
+				}
+			]
+		}
+	]
+}
